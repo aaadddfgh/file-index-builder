@@ -1,0 +1,28 @@
+{
+  "private":"true",
+  "name": "file-index-builder",
+  "version": "1.0.1",
+  "description": "Build inverted index for local file.",
+  "main": "dist/index.js",
+  "bin": {
+    "build-index-cli": "bin/build"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "build-npm": "del-cli build/* && copy .\\package.json .\\build\\ & copy .\\README.md .\\build\\ & copy .\\LICENSE .\\build\\ & (mkdir .\\build\\bin && mkdir .\\build\\dist && (copy .\\dist .\\build\\dist & copy .\\bin .\\build\\bin\\))",
+    "clean": "del-cli dist/* && del-cli bin/* && del-cli build/*"
+  },
+  "keywords": ["file index","inverted index"],
+  "author": "aaadddfgh",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@types/node": "^18.16.2",
+    "del-cli": "^5.0.0",
+    "typescript": "^5.0.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "commander": "^10.0.1",
+    "glob": "^10.2.2"
+  }
+}

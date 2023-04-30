@@ -1,0 +1,20 @@
+{
+    "include": ["src/build.ts"],
+    "compilerOptions": {
+        "lib": [
+            "ES2021.String"
+        ],
+        "target": "ESNext" ,
+        "outDir": "bin/",
+        "moduleResolution":"nodenext",
+        "noEmit": false,
+        "baseUrl": "./",
+         "paths": {
+            "@dist/*":["./dist/*"]
+         },
+         
+        // "allowSyntheticDefaultImports": true,
+        // "allowJs": true
+    },
+    
+}

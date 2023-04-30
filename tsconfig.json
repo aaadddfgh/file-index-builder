@@ -1,0 +1,17 @@
+{
+    "include": ["src/**/*"],
+    "exclude": ["src/test/*"],
+    "compilerOptions": {
+        //"sourceMap": true,
+        "lib": [
+            "ES2021.String"
+        ],
+        "moduleResolution":"node",
+        "target": "ESNext",
+        "outDir": "dist/",
+        "module": "ESNext",
+
+        // "allowSyntheticDefaultImports": true,
+        // "allowJs": true
+    },
+}
